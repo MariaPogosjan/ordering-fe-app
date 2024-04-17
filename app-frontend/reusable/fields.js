@@ -40,5 +40,59 @@ export const fields = [
                 message: 'Age should be positive',
             },
         },
+    }, 
+    {
+        step: 2,
+        id: 'email',
+        labelName: 'email',
+        type: 'email',
+        name: 'email',
+        validation: {
+            required: 'Email is a required field',
+            pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                message: 'Email should have correct format',
+            },
+        },
+    }, 
+    {
+        step: 2,
+        id: 'phone',
+        labelName: 'phone',
+        type: 'tel',
+        name: 'phone',
+        validation: {
+            required: 'Phone number is a required field',
+        },
     },
+    {
+        step: 3,
+        id: 'seat',
+        labelName: 'Seat',
+        type: 'text',
+        name: 'seat',
+        validation: {
+            required: 'Seat is a required field',
+        },
+    },
+    {
+        step: 3,
+        id: 'food',
+        labelName: 'Food',
+        type: 'text',
+        name: 'food',
+        validation: {
+            required: 'Food is a required field',
+        },
+    },
+    {
+        step: 3,
+        id: 'allergies',
+        labelName: 'Allergies',
+        type: 'text',
+        name: 'allergies',
+        validation: {
+            required: 'Allergies is a required field',
+        },
+    }
 ];
