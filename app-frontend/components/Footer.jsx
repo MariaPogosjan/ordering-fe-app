@@ -6,7 +6,7 @@ const Footer = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      Built by DevSkills
+      Built by Maria Pogosjan
     </a>
   </footer>
 )
